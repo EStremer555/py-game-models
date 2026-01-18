@@ -28,7 +28,7 @@ def main() -> None:
                 "guild"
             ]["name"], defaults={"description": player_data[
                 "guild"
-            ].get("description", "")})
+            ].get("description")})
         Player.objects.get_or_create(nickname=player_nickname,
                                      defaults={
                                          "email": player_data.get("email"),
